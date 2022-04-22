@@ -1,0 +1,117 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 960px;
+    border: 15px solid black;
+    align-content: flex-start;
+    background-color: white;
+    box-shadow: blue;    /* ?????? */
+    
+}
+
+.gridBlock {
+    border: 1px solid blue;
+    height: 57px;
+    width: 57px;
+    
+
+    
+}
+
+.gridBlock32 {
+    border: 1px solid blue;
+    height: 27px;
+    width: 27px;
+}
+
+.gridBlock64 {
+    border: 1px solid  blue; 
+    height: 12px;
+    width: 12px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    background-color: gray;
+}
+
+#title {
+    font-size: 80px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-style: italic;
+    text-shadow: 5px 5px blue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, monospace;
+}
+
+#sixteenBtn {
+    border: 6px solid black;
+    border-radius: 25%;
+    height: 75px;
+    width: 100px;
+    font-size: large;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#thirtytwoBtn {
+    border: 6px solid black;
+    border-radius: 25%;
+    height: 75px;
+    width: 100px;
+    font-size: large;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#sixtyfourBtn {
+    border: 6px solid black;
+    border-radius: 25%;
+    height: 75px;
+    width: 100px;
+    font-size: large;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#clear {
+    border: 6px solid black;
+    border-radius: 50%;
+    height: 75px;
+    width: 100px;
+    font-size: large;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#btnContainer {
+    display: flex;
+    /*border: 2px solid red;*/
+    justify-content: space-around;
+    width: 500px;
+}
+
+#clear:hover {
+    background-color: blue;
+    border: 2px solid black;
+}
+
+#sixtyfourBtn:hover {
+    background-color: blue;
+    border: 2px solid black;
+}
+
+#sixteenBtn:hover {
+    background-color: blue;
+    border: 2px solid black;
+}
+
+#thirtytwoBtn:hover {
+    background-color: blue;
+    border: 2px solid black;
+}
