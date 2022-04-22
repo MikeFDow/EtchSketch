@@ -9,7 +9,7 @@ thirtytwoBtn.addEventListener("click", thirtytwo);
 sixtyfourBtn.addEventListener("click", sixtyfour);
 
 const clearBtn = document.querySelector('#clear');  // WORKS
-clearBtn.addEventListener("click", clear2);
+clearBtn.addEventListener("click", clear1);
 
 /*
 const block = document.createElement('div');
@@ -21,6 +21,7 @@ container.appendChild(block);
 // Function for creating a 16x16 grid
 
 function sixteen () {
+    clear2();
     if (container.hasChildNodes('gridBlock')) {
        return;
     } else {
@@ -38,6 +39,7 @@ function sixteen () {
 // Function for creating a 32x32 grid
 
 function thirtytwo () {
+    clear2();
     if (container.hasChildNodes('gridBlock32')) {
         return;
     } else {
@@ -53,6 +55,7 @@ function thirtytwo () {
 };
 
 function sixtyfour () {
+    clear2();
     if (container.hasChildNodes('gridBlock64')) {
         return;
     } else {
@@ -76,6 +79,16 @@ function clear() {
 }
 };
 */
+
+function clear1 (){
+    if(container.hasChildNodes('gridBlock')) {
+        sixteen();
+    } else if (container.hasChildNodes('gridBlock32')) {
+        thirtytwo();
+    } else if(container.hasChildNodes('gridBlock64')) {
+        sixtyfour();
+    }
+};
 
 function clear2() {
     while (container.firstChild) {
